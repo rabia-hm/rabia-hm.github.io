@@ -538,7 +538,21 @@ strong {
     border-radius: 50%;
     background: var(--gradient-bordeaux);
     box-shadow: 0 0 60px var(--bordeaux-glow), 0 0 120px rgba(139, 26, 58, 0.15);
+    position: relative;
+    overflow: hidden;
     animation: pulse 3s ease-in-out infinite;
+}
+
+.orb-core::before {
+    content: '';
+    position: absolute;
+    top: 8%;
+    left: 18%;
+    width: 35%;
+    height: 25%;
+    background: radial-gradient(ellipse, rgba(255, 255, 255, 0.45), transparent);
+    border-radius: 50%;
+    filter: blur(3px);
 }
 
 @keyframes spin {

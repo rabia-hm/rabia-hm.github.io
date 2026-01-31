@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const typingElement = document.getElementById('typingText');
     const phrases = [
         'Data Analyste en devenir',
-        'Etudiante a 42',
+        'Étudiante à 42',
         'Python | SQL | Visualisation',
         'Disponible pour un stage',
     ];
@@ -256,7 +256,7 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         const btn = form.querySelector('button');
         const originalText = btn.innerHTML;
-        btn.innerHTML = 'Message envoye &#10003;';
+        btn.innerHTML = 'Message envoyé &#10003;';
         btn.style.background = 'linear-gradient(135deg, #2d7a4f, #3da065)';
         setTimeout(() => {
             btn.innerHTML = originalText;
