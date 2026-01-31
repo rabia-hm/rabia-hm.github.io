@@ -4,10 +4,10 @@
    ============================================ */
 
 :root {
-    --bg-primary: #080c1a;
-    --bg-secondary: #0d1229;
-    --bg-card: #111638;
-    --bg-card-hover: #161c45;
+    --bg-primary: #050a18;
+    --bg-secondary: #0a1025;
+    --bg-card: #0e1533;
+    --bg-card-hover: #131b40;
 
     --bordeaux: #8b1a3a;
     --bordeaux-light: #b8264f;
@@ -24,7 +24,7 @@
 
     --gradient-bordeaux: linear-gradient(135deg, #8b1a3a, #d4567a);
     --gradient-bubble: linear-gradient(135deg, #8b1a3a, #d4567a, #e88da5);
-    --gradient-card: linear-gradient(135deg, #111638 0%, #161c45 100%);
+    --gradient-card: linear-gradient(135deg, #0e1533 0%, #131b40 100%);
 
     --font-main: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
@@ -154,10 +154,10 @@ strong {
 }
 
 .navbar.scrolled {
-    background: rgba(8, 12, 26, 0.9);
+    background: rgba(5, 10, 24, 0.92);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border-bottom: 1px solid rgba(139, 26, 58, 0.15);
+    border-bottom: 1px solid rgba(139, 26, 58, 0.2);
     padding: 0.7rem 2rem;
 }
 
@@ -214,7 +214,7 @@ strong {
 .nav-cta {
     background: var(--gradient-bordeaux);
     padding: 0.5rem 1.2rem !important;
-    border-radius: 8px;
+    border-radius: 50px;
     color: white !important;
 }
 
@@ -368,7 +368,7 @@ strong {
     align-items: center;
     gap: 0.5rem;
     padding: 0.8rem 1.8rem;
-    border-radius: 10px;
+    border-radius: 50px;
     font-weight: 600;
     font-size: 0.95rem;
     transition: all var(--transition);
@@ -955,7 +955,7 @@ strong {
     align-items: center;
     justify-content: center;
     background: var(--gradient-bordeaux);
-    border-radius: 10px;
+    border-radius: 50%;
     flex-shrink: 0;
 }
 
@@ -984,7 +984,7 @@ strong {
     padding: 0.8rem 1rem;
     background: var(--bg-card);
     border: 1px solid rgba(139, 26, 58, 0.15);
-    border-radius: var(--radius);
+    border-radius: 20px;
     color: var(--text-primary);
     font-family: var(--font-main);
     font-size: 0.95rem;
