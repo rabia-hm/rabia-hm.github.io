@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio — Data Analyste | 42</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Animated Bubbles Background -->
+<div class="bubbles-container" id="bubbles"></div>
+
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+    <div class="nav-logo">
+        <span class="logo-bracket">&lt;</span>data<span class="logo-dot">.</span>analyst<span class="logo-bracket">/&gt;</span>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+    </button>
+    <button class="theme-toggle" id="themeToggle" aria-label="Changer de theme">
+        <span class="toggle-icon" id="toggleIcon">&#9790;</span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#apropos">A propos</a></li>
+        <li><a href="#competences">Competences</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero" id="accueil">
+    <div class="hero-content">
+        <p class="hero-greeting">Bonjour, je suis</p>
+        <h1 class="hero-name">Rabia</h1>
+        <div class="hero-typing">
+            <span class="typing-prefix">&gt;&nbsp;</span>
+            <span class="typing-text" id="typingText"></span>
+            <span class="typing-cursor">|</span>
+        </div>
+        <p class="hero-description">
+            Etudiante a <strong>42</strong> passionnee par la data analyse.
+            Je transforme les donnees brutes en insights actionnables.
+        </p>
+        <div class="hero-buttons">
+            <a href="#projets" class="btn btn-primary">
+                <span class="btn-icon">&#9672;</span> Voir mes projets
+            </a>
+            <a href="#contact" class="btn btn-outline">
+                <span class="btn-icon">&#9993;</span> Me contacter
+            </a>
+        </div>
+        <div class="hero-stats">
+            <div class="stat">
+                <span class="stat-number" data-target="42">0</span>
+                <span class="stat-label">Ecole</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span>
+                <span class="stat-label">Projets</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number" data-target="5">0</span><span class="stat-plus">+</span>
+                <span class="stat-label">Outils maitrisés</span>
+            </div>
+        </div>
+    </div>
+    <div class="hero-visual">
+        <div class="data-orb">
+            <div class="orb-ring orb-ring-1"></div>
+            <div class="orb-ring orb-ring-2"></div>
+            <div class="orb-ring orb-ring-3"></div>
+            <div class="orb-core"></div>
+        </div>
+    </div>
+</section>
+
+<!-- A propos -->
+<section class="section" id="apropos">
+    <div class="section-container">
+        <h2 class="section-title">
+            <span class="title-decorator">//</span> A propos
+        </h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>
+                    Actuellement etudiante a <strong>l'ecole 42</strong>, je me specialise
+                    dans l'analyse de donnees et la data science. Mon parcours atypique
+                    m'a donnee une approche unique pour resoudre les problemes complexes.
+                </p>
+                <p>
+                    Je suis a la recherche d'un <strong>stage en data analyse</strong> ou
+                    je pourrai mettre en pratique mes competences en Python, SQL et
+                    visualisation de donnees pour generer de la valeur a partir de vos data.
+                </p>
+                <div class="about-highlights">
+                    <div class="highlight">
+                        <span class="highlight-icon">&#9881;</span>
+                        <div>
+                            <strong>Rigueur</strong>
+                            <p>Formee par la pedagogie 42</p>
+                        </div>
+                    </div>
+                    <div class="highlight">
+                        <span class="highlight-icon">&#9733;</span>
+                        <div>
+                            <strong>Curiosité</strong>
+                            <p>Toujours en apprentissage</p>
+                        </div>
+                    </div>
+                    <div class="highlight">
+                        <span class="highlight-icon">&#9830;</span>
+                        <div>
+                            <strong>Autonomie</strong>
+                            <p>Peer-to-peer learning</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-card">
+                <div class="card-header">
+                    <span class="card-dot"></span>
+                    <span class="card-dot"></span>
+                    <span class="card-dot"></span>
+                    <span class="card-title">profil.json</span>
+                </div>
+                <pre class="card-code"><code>{
+  <span class="json-key">"nom"</span>: <span class="json-string">"Rabia"</span>,
+  <span class="json-key">"ecole"</span>: <span class="json-string">"42"</span>,
+  <span class="json-key">"recherche"</span>: <span class="json-string">"Stage Data Analyste"</span>,
+  <span class="json-key">"langues"</span>: [
+    <span class="json-string">"Francais"</span>,
+    <span class="json-string">"Anglais"</span>
+  ],
+  <span class="json-key">"disponibilite"</span>: <span class="json-bool">true</span>,
+  <span class="json-key">"passions"</span>: [
+    <span class="json-string">"Data Visualization"</span>,
+    <span class="json-string">"Machine Learning"</span>,
+    <span class="json-string">"Problem Solving"</span>
+  ]
+}</code></pre>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Competences -->
+<section class="section section-alt" id="competences">
+    <div class="section-container">
+        <h2 class="section-title">
+            <span class="title-decorator">//</span> Competences
+        </h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3 class="skill-category-title">
+                    <span class="cat-icon">&#128202;</span> Langages & Outils
+                </h3>
+                <div class="skill-bars">
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Python</span><span>85%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>SQL</span><span>80%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>C</span><span>75%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>R</span><span>60%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3 class="skill-category-title">
+                    <span class="cat-icon">&#128200;</span> Data & Visualisation
+                </h3>
+                <div class="skill-tags">
+                    <span class="tag">Pandas</span>
+                    <span class="tag">NumPy</span>
+                    <span class="tag">Matplotlib</span>
+                    <span class="tag">Seaborn</span>
+                    <span class="tag">Plotly</span>
+                    <span class="tag">Power BI</span>
+                    <span class="tag">Tableau</span>
+                    <span class="tag">Excel</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3 class="skill-category-title">
+                    <span class="cat-icon">&#128736;</span> Outils & Methodes
+                </h3>
+                <div class="skill-tags">
+                    <span class="tag">Git</span>
+                    <span class="tag">Jupyter</span>
+                    <span class="tag">Docker</span>
+                    <span class="tag">Linux</span>
+                    <span class="tag">ETL</span>
+                    <span class="tag">API REST</span>
+                    <span class="tag">Scikit-learn</span>
+                    <span class="tag">PostgreSQL</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projets -->
+<section class="section" id="projets">
+    <div class="section-container">
+        <h2 class="section-title">
+            <span class="title-decorator">//</span> Projets
+        </h2>
+        <div class="projects-grid">
+            <article class="project-card">
+                <div class="project-visual" style="--accent: #8b1a3a;">
+                    <div class="project-bubble project-bubble-1"></div>
+                    <div class="project-bubble project-bubble-2"></div>
+                    <div class="project-bubble project-bubble-3"></div>
+                    <span class="project-icon">&#128202;</span>
+                </div>
+                <div class="project-content">
+                    <h3>Analyse de Donnees E-commerce</h3>
+                    <p>Exploration et analyse d'un dataset de ventes. Nettoyage, visualisation et recommandations strategiques.</p>
+                    <div class="project-tech">
+                        <span>Python</span><span>Pandas</span><span>Matplotlib</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">GitHub &#8594;</a>
+                        <a href="#" class="project-link">Demo &#8594;</a>
+                    </div>
+                </div>
+            </article>
+            <article class="project-card">
+                <div class="project-visual" style="--accent: #6b2fa0;">
+                    <div class="project-bubble project-bubble-1"></div>
+                    <div class="project-bubble project-bubble-2"></div>
+                    <div class="project-bubble project-bubble-3"></div>
+                    <span class="project-icon">&#128200;</span>
+                </div>
+                <div class="project-content">
+                    <h3>Dashboard COVID-19</h3>
+                    <p>Tableau de bord interactif visualisant l'evolution de la pandemie avec des donnees en temps reel.</p>
+                    <div class="project-tech">
+                        <span>Python</span><span>Plotly</span><span>Dash</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">GitHub &#8594;</a>
+                        <a href="#" class="project-link">Demo &#8594;</a>
+                    </div>
+                </div>
+            </article>
+            <article class="project-card">
+                <div class="project-visual" style="--accent: #1a5c8b;">
+                    <div class="project-bubble project-bubble-1"></div>
+                    <div class="project-bubble project-bubble-2"></div>
+                    <div class="project-bubble project-bubble-3"></div>
+                    <span class="project-icon">&#129302;</span>
+                </div>
+                <div class="project-content">
+                    <h3>Prediction ML — Churn Client</h3>
+                    <p>Modele de machine learning pour predire le depart des clients. Feature engineering et optimisation.</p>
+                    <div class="project-tech">
+                        <span>Scikit-learn</span><span>SQL</span><span>Jupyter</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">GitHub &#8594;</a>
+                    </div>
+                </div>
+            </article>
+            <article class="project-card">
+                <div class="project-visual" style="--accent: #3a1a5c;">
+                    <div class="project-bubble project-bubble-1"></div>
+                    <div class="project-bubble project-bubble-2"></div>
+                    <div class="project-bubble project-bubble-3"></div>
+                    <span class="project-icon">&#127760;</span>
+                </div>
+                <div class="project-content">
+                    <h3>Web Scraping & Analyse</h3>
+                    <p>Pipeline de collecte automatisee de donnees web avec nettoyage et stockage en base de donnees.</p>
+                    <div class="project-tech">
+                        <span>Python</span><span>BeautifulSoup</span><span>PostgreSQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">GitHub &#8594;</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section class="section section-alt" id="contact">
+    <div class="section-container">
+        <h2 class="section-title">
+            <span class="title-decorator">//</span> Contact
+        </h2>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <p class="contact-intro">
+                    Interessee par mon profil ? N'hesitez pas a me contacter
+                    pour discuter d'une opportunite de stage.
+                </p>
+                <div class="contact-links">
+                    <a href="mailto:votre@email.com" class="contact-item">
+                        <span class="contact-icon">&#9993;</span>
+                        <div>
+                            <strong>Email</strong>
+                            <span>votre@email.com</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/" class="contact-item" target="_blank">
+                        <span class="contact-icon">&#9741;</span>
+                        <div>
+                            <strong>GitHub</strong>
+                            <span>github.com/votre-profil</span>
+                        </div>
+                    </a>
+                    <a href="https://linkedin.com/" class="contact-item" target="_blank">
+                        <span class="contact-icon">&#9830;</span>
+                        <div>
+                            <strong>LinkedIn</strong>
+                            <span>linkedin.com/in/votre-profil</span>
+                        </div>
+                    </a>
+                    <a href="#" class="contact-item">
+                        <span class="contact-icon">&#9742;</span>
+                        <div>
+                            <strong>42 Intra</strong>
+                            <span>votre-login</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">
+                    Envoyer le message <span>&#8594;</span>
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="nav-logo">
+            <span class="logo-bracket">&lt;</span>data<span class="logo-dot">.</span>analyst<span class="logo-bracket">/&gt;</span>
+        </div>
+        <p>Concu avec passion a 42 par Rabia</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
