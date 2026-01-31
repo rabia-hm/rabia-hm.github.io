@@ -492,31 +492,44 @@ strong {
     animation: spin 10s linear infinite;
 }
 
-.orb-ring-1::after,
-.orb-ring-2::after,
-.orb-ring-3::after {
-    content: '';
+.orb-label {
     position: absolute;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    top: -4px;
+    top: -14px;
     left: 50%;
+    transform: translateX(-50%);
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 12px;
+    white-space: nowrap;
+    letter-spacing: 0.5px;
 }
 
-.orb-ring-1::after {
+.orb-ring-1 .orb-label {
     background: var(--bordeaux-light);
-    box-shadow: 0 0 15px var(--bordeaux-light);
+    color: white;
+    box-shadow: 0 0 15px var(--bordeaux-glow);
+    animation: counterSpin 20s linear infinite;
 }
 
-.orb-ring-2::after {
+.orb-ring-2 .orb-label {
     background: var(--rose);
-    box-shadow: 0 0 15px var(--rose);
+    color: white;
+    box-shadow: 0 0 15px rgba(212, 86, 122, 0.3);
+    animation: counterSpin 15s linear infinite reverse;
 }
 
-.orb-ring-3::after {
+.orb-ring-3 .orb-label {
     background: var(--rose-light);
-    box-shadow: 0 0 15px var(--rose-light);
+    color: var(--bg-primary);
+    box-shadow: 0 0 15px rgba(232, 141, 165, 0.3);
+    animation: counterSpin 10s linear infinite;
+}
+
+@keyframes counterSpin {
+    from { transform: translateX(-50%) rotate(0deg); }
+    to { transform: translateX(-50%) rotate(-360deg); }
 }
 
 .orb-core {

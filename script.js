@@ -50,8 +50,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const size = Math.random() * 60 + 10;
             const left = Math.random() * 100;
-            const duration = Math.random() * 15 + 10;
-            const delay = Math.random() * 10;
+            const duration = Math.random() * 12 + 8;
+            const delay = Math.random() * 3;
 
             bubble.style.width = size + 'px';
             bubble.style.height = size + 'px';
