@@ -141,66 +141,68 @@
         <h2 class="section-title">
             <span class="title-decorator">//</span> Compétences
         </h2>
-        <div class="skills-grid">
+        <div class="competency-layout">
             <div class="skill-category">
                 <h3 class="skill-category-title">
-                    <span class="cat-icon">&#128202;</span> Langages & Outils
+                    <span class="cat-icon">&#128202;</span> Analyse et visualisation de données
                 </h3>
-                <div class="skill-bars">
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>Python</span><span>85%</span>
-                        </div>
-                        <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>SQL</span><span>80%</span>
-                        </div>
-                        <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>C</span><span>75%</span>
-                        </div>
-                        <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>R</span><span>60%</span>
-                        </div>
-                        <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
-                    </div>
-                </div>
+                <ul class="competency-list">
+                    <li>Exploration et analyse de datasets avec Python et Pandas</li>
+                    <li>Création de graphiques clairs avec Matplotlib</li>
+                </ul>
+                <p class="competency-tools">Outils : Python, Pandas, Matplotlib, Excel</p>
             </div>
-            <div class="skill-category">
-                <h3 class="skill-category-title">
-                    <span class="cat-icon">&#128200;</span> Data & Visualisation
-                </h3>
-                <div class="skill-tags">
-                    <span class="tag">Pandas</span>
-                    <span class="tag">NumPy</span>
-                    <span class="tag">Matplotlib</span>
-                    <span class="tag">Seaborn</span>
-                    <span class="tag">Plotly</span>
-                    <span class="tag">Power BI</span>
-                    <span class="tag">Tableau</span>
-                    <span class="tag">Excel</span>
+            <div class="about-card">
+                <div class="card-header">
+                    <span class="card-dot"></span>
+                    <span class="card-dot"></span>
+                    <span class="card-dot"></span>
+                    <span class="card-title">visualisation.py</span>
                 </div>
-            </div>
-            <div class="skill-category">
-                <h3 class="skill-category-title">
-                    <span class="cat-icon">&#128736;</span> Outils & Méthodes
-                </h3>
-                <div class="skill-tags">
-                    <span class="tag">Git</span>
-                    <span class="tag">Jupyter</span>
-                    <span class="tag">Docker</span>
-                    <span class="tag">Linux</span>
-                    <span class="tag">ETL</span>
-                    <span class="tag">API REST</span>
-                    <span class="tag">Scikit-learn</span>
-                    <span class="tag">PostgreSQL</span>
+                <div class="chart-body">
+                    <p class="chart-label">Évolution mensuelle — dataset_ventes.csv</p>
+                    <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" width="100%">
+                        <defs>
+                            <linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0%" stop-color="#8b1a3a" stop-opacity="0.5"/>
+                                <stop offset="100%" stop-color="#8b1a3a" stop-opacity="0"/>
+                            </linearGradient>
+                            <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
+                                <stop offset="0%" stop-color="#8b1a3a"/>
+                                <stop offset="100%" stop-color="#d4567a"/>
+                            </linearGradient>
+                        </defs>
+                        <!-- Grid lines -->
+                        <line x1="40" y1="20" x2="385" y2="20" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+                        <line x1="40" y1="70" x2="385" y2="70" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+                        <line x1="40" y1="120" x2="385" y2="120" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+                        <line x1="40" y1="170" x2="385" y2="170" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+                        <!-- Y axis -->
+                        <line x1="40" y1="20" x2="40" y2="170" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+                        <!-- Area fill -->
+                        <path d="M 40,130 C 74,130 74,80 109,80 C 144,80 144,100 178,100 C 212,100 212,35 247,35 C 282,35 282,62 316,62 C 350,62 350,20 385,20 L 385,170 L 40,170 Z" fill="url(#areaGrad)"/>
+                        <!-- Line -->
+                        <path class="chart-line" d="M 40,130 C 74,130 74,80 109,80 C 144,80 144,100 178,100 C 212,100 212,35 247,35 C 282,35 282,62 316,62 C 350,62 350,20 385,20" fill="none" stroke="url(#lineGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <!-- Dots -->
+                        <circle cx="40"  cy="130" r="4" fill="#0e1533" stroke="#d4567a" stroke-width="2"/>
+                        <circle cx="109" cy="80"  r="4" fill="#0e1533" stroke="#d4567a" stroke-width="2"/>
+                        <circle cx="178" cy="100" r="4" fill="#0e1533" stroke="#d4567a" stroke-width="2"/>
+                        <circle cx="247" cy="35"  r="4" fill="#0e1533" stroke="#d4567a" stroke-width="2"/>
+                        <circle cx="316" cy="62"  r="4" fill="#0e1533" stroke="#d4567a" stroke-width="2"/>
+                        <circle cx="385" cy="20"  r="4" fill="#0e1533" stroke="#e88da5" stroke-width="2"/>
+                        <!-- X labels -->
+                        <text x="40"  y="186" fill="rgba(154,150,176,0.6)" font-size="10" text-anchor="middle">Jan</text>
+                        <text x="109" y="186" fill="rgba(154,150,176,0.6)" font-size="10" text-anchor="middle">Mar</text>
+                        <text x="178" y="186" fill="rgba(154,150,176,0.6)" font-size="10" text-anchor="middle">Mai</text>
+                        <text x="247" y="186" fill="rgba(154,150,176,0.6)" font-size="10" text-anchor="middle">Jul</text>
+                        <text x="316" y="186" fill="rgba(154,150,176,0.6)" font-size="10" text-anchor="middle">Sep</text>
+                        <text x="385" y="186" fill="rgba(154,150,176,0.6)" font-size="10" text-anchor="middle">Nov</text>
+                        <!-- Y labels -->
+                        <text x="32" y="173" fill="rgba(154,150,176,0.5)" font-size="9" text-anchor="end">0</text>
+                        <text x="32" y="123" fill="rgba(154,150,176,0.5)" font-size="9" text-anchor="end">25</text>
+                        <text x="32" y="73"  fill="rgba(154,150,176,0.5)" font-size="9" text-anchor="end">50</text>
+                        <text x="32" y="23"  fill="rgba(154,150,176,0.5)" font-size="9" text-anchor="end">75</text>
+                    </svg>
                 </div>
             </div>
         </div>

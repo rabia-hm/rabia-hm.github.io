@@ -794,6 +794,84 @@ strong {
 }
 
 /* ============================================
+   COMPETENCIES
+   ============================================ */
+
+.competency-intro {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--rose);
+    margin-bottom: 1rem;
+    font-weight: 500;
+    opacity: 0.85;
+}
+
+.competency-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.competency-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.55rem;
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+.competency-list li::before {
+    content: '▸';
+    color: var(--bordeaux-light);
+    flex-shrink: 0;
+    margin-top: 1px;
+    font-size: 0.8rem;
+}
+
+.competency-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: stretch;
+}
+
+.competency-tools {
+    margin-top: 1.2rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-family: var(--font-mono);
+}
+
+.chart-body {
+    padding: 1.2rem 1.5rem 1rem;
+}
+
+.chart-label {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-family: var(--font-mono);
+    margin-bottom: 0.75rem;
+}
+
+.chart-line {
+    stroke-dasharray: 900;
+    stroke-dashoffset: 900;
+    animation: drawLine 2s ease forwards 0.4s;
+}
+
+@keyframes drawLine {
+    to { stroke-dashoffset: 0; }
+}
+
+@media (max-width: 1024px) {
+    .competency-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ============================================
    PROJECTS
    ============================================ */
 
