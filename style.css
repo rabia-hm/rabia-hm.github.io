@@ -999,6 +999,68 @@ strong {
     transform: translateX(3px);
 }
 
+/* Featured project */
+.project-featured {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.project-visual-featured {
+    height: auto;
+    min-height: 220px;
+}
+
+.project-badge {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 600;
+    font-family: var(--font-mono);
+    padding: 0.25rem 0.8rem;
+    background: var(--bordeaux-glow);
+    border: 1px solid var(--bordeaux);
+    border-radius: 20px;
+    color: var(--rose-light);
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.project-highlights {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.project-highlights li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+.project-highlights li::before {
+    content: '▸';
+    color: var(--bordeaux-light);
+    flex-shrink: 0;
+    font-size: 0.8rem;
+    margin-top: 1px;
+}
+
+@media (max-width: 768px) {
+    .project-featured {
+        grid-template-columns: 1fr;
+    }
+    .project-visual-featured {
+        min-height: 160px;
+    }
+}
+
 /* ============================================
    CONTACT
    ============================================ */
